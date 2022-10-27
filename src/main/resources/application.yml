@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: school
+
+  profiles:
+    active: prod
+server:
+  servlet:
+    context-path: /school
+
+springdoc:
+  swagger-ui:
+    tagsSorter: alpha
