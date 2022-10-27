@@ -1,0 +1,17 @@
+server:
+  port: 9005
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:mysql://38.242.211.216:3306/school_app?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Africa/Harare
+    username: developer
+    password: ch@ng3itDev
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
